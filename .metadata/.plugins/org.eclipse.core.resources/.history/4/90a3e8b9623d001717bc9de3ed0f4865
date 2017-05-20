@@ -1,0 +1,20 @@
+package model;
+
+public class Quadrado extends Retangulo {
+
+	public Quadrado(double a) {
+		super(a, a);
+	}
+	
+	public void setA(double a) {
+		this.setA(a);
+		this.setB(a);
+	}
+
+	public void setB(double b) {
+		this.setA(b);
+		this.setB(b);
+	}
+
+	
+}

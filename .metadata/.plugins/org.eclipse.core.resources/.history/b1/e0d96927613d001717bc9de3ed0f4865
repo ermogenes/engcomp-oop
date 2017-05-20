@@ -1,0 +1,10 @@
+package model;
+
+public class Quadrado extends Retangulo {
+
+	public Quadrado(double a, double b) {
+		super(a, b);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,11 @@
+package model;
+
+public class Quadrado extends Retangulo {
+
+	public Quadrado(double a) {
+		super(a, a);
+	}
+	
+	
+
+}

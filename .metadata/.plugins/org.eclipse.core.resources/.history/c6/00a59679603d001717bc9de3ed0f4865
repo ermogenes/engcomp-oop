@@ -1,0 +1,54 @@
+package model;
+
+public class Paralelogramo {
+	
+	private double a;
+	private double h;
+	private double theta;
+	
+	public Paralelogramo(double a, double h, double theta) {
+		this.a = a;
+		this.h = h;
+		this.theta = theta;
+	}
+
+	public double getA() {
+		return a;
+	}
+
+	public void setA(double a) {
+		this.a = a;
+	}
+
+	public double getH() {
+		return h;
+	}
+
+	public void setH(double h) {
+		this.h = h;
+	}
+
+	public double getTheta() {
+		return theta;
+	}
+
+	public void setTheta(double theta) {
+		this.theta = theta;
+	}
+	
+	public String toString() {
+		return String.format("Paralelogramo [a = {1}, h = {2}, theta = {3}]", this.a, this.h, this.theta);
+	}
+	
+	public double calcularArea() {
+		return a * h;
+	}
+	
+	private double calcularB() {
+		return h / Math.cos(this.theta);  
+	}
+	
+	public double calcularPerimetro() {
+		return 2 * (a + calcularB());
+	}
+}

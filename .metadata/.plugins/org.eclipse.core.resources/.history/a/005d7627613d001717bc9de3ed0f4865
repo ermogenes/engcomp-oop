@@ -1,0 +1,38 @@
+package model;
+
+public class Retangulo extends Paralelogramo {
+	
+	public Retangulo(double a, double b) {
+		super(a, b, Math.toRadians(90));
+	}
+	
+	public double getB() {
+		return this.getH();
+	}
+	
+	public void setB(double b) {
+		this.setH(b);
+		this.setTheta(Math.toRadians(90));
+	}
+	
+	@Override
+	public String toString() {
+		return String.format(
+				"Retângulo [a = {1}, b = {2}, h = {3}, theta = {4}]",
+				this.getA(),
+				this.getB(),
+				this.getH(),
+				this.getTheta()
+			); 
+	}
+
+	@Override
+	public double calcularArea() {
+		return 0;
+	}
+	
+	@Override
+	public double calcularPerimetro() {
+		return 0;
+	}
+}
