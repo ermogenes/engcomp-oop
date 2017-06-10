@@ -12,3 +12,6 @@ Meus arquivos relativos à disciplina Programação Orientada a Objetos do curso
 
 ## Semana 4
 * Exercícios 1, 2 e 3
+
+## Semana 5
+* Exercícios 1 e 2
