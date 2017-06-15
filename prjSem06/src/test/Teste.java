@@ -12,14 +12,14 @@ public class Teste {
 		double altura, largura;
 		double raio;
 
-		Scanner leitorConsole = new Scanner(System.in);
-		
 		boolean concluido = false;
+
+		Scanner leitorConsole = new Scanner(System.in);
 		
 		while (!concluido) {
 		
 			try {
-			
+
 				System.out.println("--- Entre com os objetos solicitados ---");
 			
 				System.out.println("-- Círculo --");
@@ -55,12 +55,12 @@ public class Teste {
 			} catch (IllegalArgumentException iae) {
 				System.out.println("Valores inválidos: " + iae.getMessage());
 			} finally {
-				leitorConsole.close();
 				System.out.println("Entrou no finally");
 			}
 		
 		}
 
+		leitorConsole.close();
 		System.out.println("Fim do programa.");
 	}
 
